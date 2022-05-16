@@ -1,2 +1,6 @@
-const data = require("./6-AlternativeSyntax");
-console.log(data);
+const { readFileSync, writeFileSync } = require("fs");
+const first = readFileSync("./content/first.txt", "utf-8");
+const second = readFileSync("./content/second.txt", "utf-8");
+console.log(first, second);
+
+writeFileSync("./content/result.txt", `Here is result of WFS: ${first},${second}`);

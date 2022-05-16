@@ -41,3 +41,50 @@ public class Dist_Elements {
         return newSet.size();
     }
 }
+
+
+/*
+int low = 0;
+        int high = 1;
+        while(high<nums.length){
+            if(nums[low]==nums[high]){
+                high++;
+            }else{
+                nums[low+1]=nums[high];
+                low++;
+                high++;
+            }
+        }
+        return low+1;
+ */
+
+/*
+class Solution {
+    public int removeDuplicates(int[] nums) {
+        HashSet<Integer> h = new HashSet<>();
+for(int i =0;i<nums.length;i++){
+h.add(nums[i]);
+}
+        int j=0;
+for(int x:h){
+    nums[j++]=x;
+}
+        return h.size();
+        
+    }
+}
+
+ */
+
+/*
+ for(int i =0;i<nums.length;i++){
+            for(int j = i+1;j<nums.length;j++){
+                int temp = 0;
+                if(nums[i]>nums[j]){
+                    temp=nums[i];
+                    nums[i]=nums[j];
+                    nums[j]=temp;
+                }
+            }
+        }
+ */
