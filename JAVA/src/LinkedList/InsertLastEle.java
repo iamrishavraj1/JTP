@@ -4,11 +4,11 @@ public class InsertLastEle {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int x = in.nextInt();
-    Node head = null;
-    head = insertEnd(head,10);
-    head = insertEnd(head,20);
-    head = insertEnd(head,30);
-    head = insertEnd(head,x);
+        Node head = null;
+        head = insertEnd(head,10);
+        head = insertEnd(head,20);
+        head = insertEnd(head,30);
+        head = insertEnd(head,x);
     printListLast(head);
     
     }
