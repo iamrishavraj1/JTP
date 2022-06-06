@@ -5,6 +5,7 @@ public class LargSubArraywithGivenSum {
         Scanner in = new Scanner(System.in);
         int sum = 5;
         int[] arr = new int[]{5,2,3,4};
+        //0,5,7,
        
         System.out.println(maxlen(arr,sum));
     }
@@ -13,7 +14,7 @@ public class LargSubArraywithGivenSum {
        int prefix = 0;
        int res = 0;
        for(int i = 0;i< arr.length;i++){
-           prefix+=arr[i];
+           prefix+=arr[i]; //
            if(prefix==sum){
                 res = i+1; // 1;
            }
@@ -24,6 +25,8 @@ public class LargSubArraywithGivenSum {
                res = Math.max(res,i-m.get(prefix-sum));
            }
        }
+    
+       
        return res;
     }
 }
