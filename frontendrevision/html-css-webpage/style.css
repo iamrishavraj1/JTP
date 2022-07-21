@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  height: 50%;
+  width: 100%;
+  background-color: red;
+  padding: 20px;
+  position: relative;
+}
+
+.nav-title {
+  display: inline-block;
+  font-size: 20px;
+  color: #fff;
+  padding: 10px;
+}
+
+.nav-items {
+  display: inline;
+  float: right;
+}
